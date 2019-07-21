@@ -9,14 +9,14 @@ ansiColor() {
     stage('clean') {
       withMaven {
         echo(sh(label: 'mvn clean',
-                script: 'mvn clean',
+                script: 'mvn -e clean',
                 returnStdout: true))
       }
     }
     stage('verify') {
       withMaven {
         echo(sh(label: 'mvn verify',
-                script: 'mvn verify',
+                script: 'mvn -e -s settingx.xml verify',
                 returnStdout: true))
       }
     }

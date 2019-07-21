@@ -29,7 +29,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.509</version>
+    <version>3.47</version>
   </parent>
 
   <artifactId>console-tail</artifactId>
@@ -61,9 +61,9 @@
   </prerequisites>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/console-tail-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/console-tail-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/console-tail-plugin</url>
+    <connection>scm:git:git://github.com/edwardtheharris/console-tail-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:edwardtheharris/console-tail-plugin.git</developerConnection>
+    <url>http://github.com/edwardtheharris/console-tail-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -72,6 +72,8 @@
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <repositories>

@@ -7,9 +7,11 @@ ansiColor() {
       checkout scm
     }
     stage('clean') {
-      echo(sh(label: 'mvn clean',
-              script: 'mvn clean',
-              returnStdout: true))
+      withMaven('mvn') {
+        echo(sh(label: 'mvn clean',
+                script: 'mvn clean',
+                returnStdout: true))
+      }
     }
     stage('verify') {
       echo(sh(label: 'mvn verify',

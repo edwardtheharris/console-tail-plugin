@@ -7,7 +7,7 @@
       <id>test</id>
       <activation>
         <activeByDefault>true</activeByDefault>
-        <jdk>1.6</jdk>
+        <jdk>1.8</jdk>
       </activation>
     </profile>
   </profiles>

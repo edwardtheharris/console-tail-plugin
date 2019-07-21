@@ -131,7 +131,7 @@
               </goals>
               <configuration>
                 <rules>
-                  <requireMavenVersion>
+                  <!-- <requireMavenVersion>
                     <version>(,2.1.0),(2.1.0,2.2.0),(2.2.0,)</version>
                     <message>Maven 2.1.0 and 2.2.0 produce incorrect GPG signatures and checksums respectively.
                     </message>
@@ -141,7 +141,7 @@
                     <message>Maven 3.0 through 3.0.3 inclusive do not pass correct settings.xml to Maven Release
                       Plugin.
                     </message>
-                  </requireMavenVersion>
+                  </requireMavenVersion> -->
                 </rules>
               </configuration>
             </execution>

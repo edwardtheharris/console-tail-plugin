@@ -56,10 +56,6 @@
     </developer>
   </developers>
 
-  <prerequisites>
-    <maven>2.2.1</maven>
-  </prerequisites>
-
   <scm>
     <connection>scm:git:git://github.com/edwardtheharris/console-tail-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:edwardtheharris/console-tail-plugin.git</developerConnection>
@@ -72,8 +68,6 @@
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <repositories>

@@ -5,6 +5,12 @@ node('mvn') {
   stage('checkout') {
     checkout scm
   }
+  stage('clean') {
+
+  }
+  stage('verify') {
+    
+  }
   stage('buildPlugin') {
     buildPlugin(platforms: ['linux'])
   }

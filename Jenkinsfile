@@ -8,6 +8,7 @@ ansiColor() {
     }
     stage('clean') {
       readMavenPom(file: 'pom.xml')
+      tool(name: 'mvn', type: 'maven')
       withMaven('mvn') {
         echo(sh(label: 'mvn clean',
                 script: 'mvn clean',

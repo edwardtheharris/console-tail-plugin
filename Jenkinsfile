@@ -13,6 +13,9 @@ ansiColor() {
                 returnStdout: true))
       }
     }
+		stage('artifacts') {
+			archiveArtifacts('pom.xml')
+		}
     stage('buildPlugin') {
       buildPlugin(platforms: ['linux'])
     }

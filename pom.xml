@@ -68,6 +68,7 @@
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.findbugs.failure.strict>true</maven.findbugs.failure.strict>
+		<java.level>8</java.level>
   </properties>
 
   <repositories>

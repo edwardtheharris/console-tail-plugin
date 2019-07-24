@@ -16,7 +16,7 @@ ansiColor() {
     stage('verify') {
       withMaven {
         echo(sh(label: 'mvn verify',
-                script: 'mvn -e -s settingx.xml verify',
+                script: 'mvn -e verify',
                 returnStdout: true))
       }
     }

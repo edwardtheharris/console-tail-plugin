@@ -6,17 +6,10 @@ ansiColor() {
     stage('checkout') {
       checkout scm
     }
-    stage('clean') {
+    stage('build') {
       withMaven {
         echo(sh(label: 'mvn clean',
-                script: 'mvn -e clean',
-                returnStdout: true))
-      }
-    }
-    stage('verify') {
-      withMaven {
-        echo(sh(label: 'mvn verify',
-                script: 'mvn -e verify',
+                script: 'mvn -e clean verify',
                 returnStdout: true))
       }
     }

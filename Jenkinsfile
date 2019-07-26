@@ -6,13 +6,13 @@ ansiColor() {
     stage('checkout') {
       checkout scm
     }
-    stage('build') {
-      withMaven {
-        echo(sh(label: 'mvn clean',
-                script: 'mvn -e clean verify',
-                returnStdout: true))
-      }
-    }
+    // stage('build') {
+    //   withMaven {
+    //     echo(sh(label: 'mvn clean',
+    //             script: 'mvn -e clean verify',
+    //             returnStdout: true))
+    //   }
+    // }
 		stage('artifacts') {
 			archiveArtifacts('pom.xml')
 		}
